@@ -8,10 +8,10 @@ public class KdvHesapla {
     Eğer girilen tutar 0 ve 500TL arasında ise KDV oranı %18 , tutar 500TL'den büyük
      ise KDV oranını %8 olarak KDV hesaplayan programı yazınız.
      */
-
+   static Scanner scan = new Scanner(System.in);
 
     public static void cikis() {
-        Scanner scan = new Scanner(System.in);
+
         System.out.println("Kdv hesaplamak için 1'e basınız");
         System.out.println("Çıkış yapmak için 2'e  basınız.");
         String secim = scan.nextLine();
@@ -23,12 +23,10 @@ public class KdvHesapla {
             System.out.println("Çıkış yapıldı.");
         }
     }
-
     public static void kdvhesapla() {
 
         int kdvlifiyat;
         int kdv;
-        Scanner scan = new Scanner(System.in);
         System.out.println("Aldığınız ürünün fiyatını giriniz =");
         int urunfiyati = scan.nextInt();
 
